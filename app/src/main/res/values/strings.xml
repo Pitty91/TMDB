@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TMDB</string>
+    <string name="unexpected_error">Something went wrong..</string>
+    <string name="no_internet">Please check your internet connectivity..</string>
+</resources>

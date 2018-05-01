@@ -1,0 +1,49 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.30'
+    ext.gradle_version = '3.0.1'
+    ext.support_gradle_version = '26.1.0'
+    //ext.supportGoogleVersion = '11.8.0'
+    ext.supportGoogleVersion = '12.0.1'
+    ext.constraintlayout_version = '1.1.0-beta6'
+
+    ext.gsonVersion = "2.6.2"
+    ext.gsonConverterVersion = "2.0.2"
+    ext.rxJavaRetrofitAdapterVersion = "2.0.0"
+    ext.interceptorVersion = "3.3.1"
+    ext.glideVersion = "3.6.1"
+    ext.rxAndroidVersion = "1.2.1"
+    ext.circleImageViewVersion = "2.2.0"
+    ext.rrrImageChooser = "1.0.12"
+    ext.rxAndroidVersion = "1.2.1"
+
+    ext.googleService = "3.2.0"
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+        classpath "com.google.gms:google-services:$googleService"
+
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://www.jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
